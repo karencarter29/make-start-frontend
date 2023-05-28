@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the height of the body to 100% */
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    display: flex;
+}
+  
+.login-image {
+    width: 50%; /* Adjust the width as needed */
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('../images/magicpattern-ixxjruC7Gg4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+  
+.login-content {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    top: 35%;
+    position: absolute;
+    color: #064789;
+    font-family: 'Montserrat';
+}
+
+input[type=text] {
+    padding: 10px;
+    border: 1px solid #B1F8F2;
+    border-radius: 5px;
+    color: #064789;
+    font-size: large;
+    font-family: 'Montserrat';
+}
+
+label {
+    color: #064789;
+    font-size: 24px;
+}
+
+.login-title {
+    position: absolute;
+    color: #064789;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+}
+
+.login-button {
+    position: absolute;
+    background-color: #064789;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    width: 25%;
+    height: 40px;
+    bottom: 42%;
+}
+  
+.login-button:hover {
+    background-color: #042e58;;
+}
+
+.login-no-profile {
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #064789;
+    line-height: 40px;
+    bottom: 35%;
+}
+
+.login-copyright {
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: #064789;
+    line-height: 40px;
+    bottom: 10%;
+}

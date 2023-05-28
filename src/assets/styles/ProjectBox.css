@@ -1,0 +1,31 @@
+.form {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+
+    position: relative;
+    height: 40px;
+    width: fit-content;
+    top: -60px;
+
+    background: #FFFFFF;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.box {
+    box-sizing: border-box;
+    display: block;
+    position: static;
+    height: 150px;
+
+    margin: 50px;
+    padding: 30px 15px 15px 15px;
+
+    border: 2.5px solid #B1F8F2;
+    border-radius: 20px;
+}

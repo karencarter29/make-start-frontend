@@ -1,0 +1,52 @@
+header {
+    background-color: #064789;
+    color: white;
+    position: sticky;
+    height: 120px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    z-index: 10;
+}
+  
+.container {
+    display: flex;
+}
+  
+.projects {
+    position: relative;
+    width: 70%;
+    left: 0%;
+    justify-content: center;
+}
+  
+.filters {
+    position: relative;
+    width: 26%;
+    top: 0%;
+    display: flex;
+    padding: 2%;
+}
+  
+footer {
+    background-color: #064789;
+    color: white;
+    z-index: 5;
+    height: 120px;
+    width: 100%;
+    bottom: 0%;
+}
+  
+.footerText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
