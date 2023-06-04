@@ -20,7 +20,7 @@
 .box {
     box-sizing: border-box;
     display: block;
-    position: static;
+    position: relative;
     height: 150px;
 
     margin: 50px;
@@ -28,4 +28,45 @@
 
     border: 2.5px solid #B1F8F2;
     border-radius: 20px;
+    color: #064789;
+    font-family: 'Montserrat';
+
+}
+
+.box-content {
+    position: absolute;
+    padding: 0px 15px 15px 20px;
+    top: 30px;
+    right: 20%;
+    bottom: 0;
+    left: 0;
+}
+
+.box-left-content {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    bottom: 0;
+    left: 80%;
+}
+
+.description {
+    position: relative;
+    height: 72px;
+}
+
+.price {
+    position: absolute;
+    font-size: 24px;
+    padding: 20px;
+    right: 0;
+    top: 0;
+}
+
+.members {
+    position: absolute;
+    font-size: 18px;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
 }
