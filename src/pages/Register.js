@@ -3,14 +3,18 @@ import axios from 'axios';
 
 import Logo from '../components/Logo';
 import '../assets/styles/Registration.css'
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
+    const navigate = useNavigate();
+
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [age, setAge] = useState(0);
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
+    const [opacity, setOpacity] = useState(0);
 
     function onSubmit() {
         sendUserInfo();
@@ -29,7 +33,18 @@ function Register() {
         var jsonObject = JSON.parse(jsonString);
 
         try {
-            await axios.post(url, jsonObject);
+            axios.post(url, jsonObject)
+                .then(function (response) {
+                    navigate("/home");
+                })
+                .catch(function (error) {
+                    setOpacity(1);
+                    if (error.response) {
+                        console.log(error.response.data);
+                        console.log(error.response.status);
+                        console.log(error.response.headers);
+                    }
+                });
             // Request was successful
             // Process the response data
         } catch (error) {
@@ -76,11 +91,9 @@ function Register() {
                             <input type="text" id="password" name="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)} /><br></br>
-
-                            <label for="repeatPassword">Підтвердіть пароль</label><br></br>
-                            <input type="text" id="repeatPassword" name="repeatPassword"></input><br></br>
                         </div>
                     </div>
+                    <div className='register-title' style={{color: 'red', top: 'auto', bottom: '30%', fontSize: '20px', opacity: opacity}}>Помилка :(</div>
                     <button className='register-button' onClick={onSubmit}>Зареєструватись</button>
                     <div className='register-copyright'>MAKESTART © COPYRIGHT 2023</div>
                 </div>
