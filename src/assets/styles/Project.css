@@ -1,0 +1,21 @@
+.projectNameField{
+    position: relative;
+    padding: 0px 0px 0px 40px;
+    font-size: 36px;
+    color: #064789;
+}
+
+.projectAreaName {
+    position: relative;
+    padding: 20px 0px 0px 40px;
+    font-size: 16px;
+    color: #064789;
+    opacity: 0.5;
+}
+
+.projectDescriptionArea {
+    position: relative;
+    padding: 0px 0px 0px 40px;
+    font-size: 20px;
+    color: #064789;
+}
